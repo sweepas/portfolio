@@ -1,0 +1,202 @@
+<div class="bapf_sfilter bapf_divi_button apply-filtering"><div class="bapf_body" >
+	<button  class="mf-filter-mobile bapf_button apply-filter" id="mf-filter-mobile" min_filter_width_inline="200">Apply filter</button></div></div>
+<div class="bapf_sfilter bapf_divi_button"><div class="bapf_body"><button class="bapf_button bapf_reset">Clear filters</button></div></div>
+
+
+.bapf_sfilter.bapf_divi_button .bapf_button,
+.bapf_sfilter.bapf_divi_button .apply-filter {
+background-color: #fcb800;
+color: #333;
+border: none;
+}
+
+<div className="header-card">
+    <h1>Marius Slepetys</h1>
+    <div className="contacts-container">
+      <a href="" target="_blank">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+          alt="github logo"
+          className="github-logo logo"
+        />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/marius-slepetys/"
+        target="_blank"
+      >
+        <img
+          src="https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png"
+          alt="linkedin logo"
+          className="linkedin-logo logo"
+        />
+      </a>
+    </div>
+    <p>software developer</p>
+  </div>
+  <div>
+    <p>
+      Hello there! I'm Marius, a passionate software engineer with a love
+      for tech. I'm a graduate of the Northcoders Software Engineering
+      Bootcamp, where I immersed myself in the world of full-stack
+      development with a focus on JavaScript.
+    </p>
+  </div>
+  <h4 className="project-name">NC news</h4>
+  <div className="project-card">
+    <a
+      href="https://657f1d4558f3e607e195c80e--beautiful-mandazi-c4e8c2.netlify.app/"
+      target="_blank"
+    >
+      <img src={ncNewsFe} alt="fe img" className="project-img" />
+    </a>
+    <p className="project-text">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum
+      molestias voluptatibus placeat, quo illo laudantium. Cupiditate itaque
+      veniam fuga non fugit a impedit eius magnam aliquam porro recusandae,
+      totam quasi.
+    </p>
+  </div>
+  <h4 className="project-name">NC news API</h4>
+  <div className="project-card">
+    <a
+      href="https://nc-news-be-project-lndv.onrender.com/api/"
+      target="_blank"
+    >
+      <img src={ncNewsApi} alt="api image" className="project-img" />
+    </a>
+    <p className="project-text">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum
+      molestias voluptatibus placeat, quo illo laudantium. Cupiditate itaque
+      veniam fuga non fugit a impedit eius magnam aliquam porro recusandae,
+      totam quasi.
+    </p>
+  </div>
+  <h4 className="project-name">Dark Decent Game</h4>
+  <div className="project-card">
+    <a
+      href="https://northcoders.com/project-phase/dark-descent"
+      target="_blank"
+    >
+      <img src={darkDecent} alt="game image" className="project-img" />
+    </a>
+    <p className="project-text">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum
+      molestias voluptatibus placeat, quo illo laudantium. Cupiditate itaque
+      veniam fuga non fugit a impedit eius magnam aliquam porro recusandae,
+      totam quasi.
+    </p>
+  </div>
+
+  #root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    color: #1D3557;
+  }
+  body{
+    background-color: #A8DADC;
+  }
+  
+  
+  .logo{
+    height: 30px;
+    padding: 10px;
+    transition: 0.5s;
+  }
+  
+  
+  
+  .header-card p{
+    font-weight: bolder;
+  }
+  .page-body{
+    width: 100%;
+    display: inline-block;
+  }
+  
+  .project-card  {
+    background-color: #457B9D;
+    width: 335.055px;
+    height: 400px;
+    padding: 1.5em;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0;
+    margin: auto;
+    transition:  width 500ms;
+    margin-bottom: 10%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .project-img {
+    background-color: white;
+    height: 25em;
+    padding: 1.5em;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0;
+    transition: transform 1s
+  }
+  .contacts-container{
+    height: 50px;
+  }
+  .project-text{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    transition-delay: 500ms;
+    transition: opacity 250ms, visibility 0s 0s;
+    padding: 2rem;
+  }
+  
+  .project-card:hover{
+    display: inline-flex;
+    width: 60%;
+    height: 400px;
+    transition: width 500ms;
+  }
+  .project-card:hover .project-img {
+   
+    transform: translateX(-50%);
+  }
+  
+  .project-card:hover .project-text {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 500ms;
+    position: relative;
+  }
+  
+  .project-img:hover {
+    filter: drop-shadow(0 0 2em #01010faa);
+  }
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #27cffdaa);
+  }
+  
+  .logo:hover{
+    height: 40px;
+    padding: 0;
+    transition: 0.5s;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+      animation: logo-spin infinite 20s linear;
+    }
+  }
+  
+  .card {
+    padding: 2em;
+  }
+  
+  .read-the-docs {
+    color: #888;
+  }
+  
