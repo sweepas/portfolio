@@ -10,7 +10,7 @@ function ScrollTo({ targetId, children }) {
   };
 
   return (
-    <button active='true'
+    <button 
       onClick={() => {
         scrollToTarget()
       }}
