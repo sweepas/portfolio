@@ -10,7 +10,7 @@ body{
   padding: 0;
   background-color: #132845;
   color: #8ecae6;;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 
 #root {
@@ -119,11 +119,9 @@ body{
 
 
 .project-card:hover{
-  .project-img{
-    filter: drop-shadow(0 0 2em #219EBC);
-    font-weight: bolder !important;
+  background-color: #1a3660;
   }
-}
+
 
 @media (max-width: 1000px) {
   .page-body {
@@ -133,11 +131,13 @@ body{
   .side-bar {
     flex: 1;
     order: -1; 
+    overflow-y: auto;
   }
 
   .project-side {
     flex: 1;
     order: 1; 
+    overflow-y: visible;
   }
   .project-card{
     height: 100%;
@@ -169,6 +169,9 @@ body{
     flex-wrap: wrap;
   }
   .project-img{
+    height: auto;
+  }
+  .about{
     height: auto;
   }
 }

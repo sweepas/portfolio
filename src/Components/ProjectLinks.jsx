@@ -26,12 +26,12 @@ export function ProjectLinks({}) {
               handleClick("about");
             }}
           >
-            <span className={styles["link-span"]}></span>
+            <span className={`${styles["link-span"]}`}></span>
             <span>about me</span>
           </button>
         </li>
         
-          <h4>projects</h4>
+          <h4 className={styles["list-item"]}>projects</h4>
        
         {projects.map((project) => {
           return (
