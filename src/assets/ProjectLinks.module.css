@@ -1,0 +1,61 @@
+
+.list-item{
+    list-style: none;
+  }
+
+  .list-button{
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    border: none;
+    background-color: inherit;
+    display: inline-flex;
+    width: 60%;
+    color: #8ecae6;
+    outline: none !important;
+  }
+
+  .link-span{ 
+    display: block;
+    width: 1em;
+    border-top: 1px solid #8ecae6; 
+    margin: 0.5em 0; 
+    margin-right: 0.5em;
+    transition: 250ms;
+  }
+
+
+  .list-button:hover{
+    filter: drop-shadow(0 0 2em #219EBC);
+    font-weight: bolder;
+    .link-span{
+      width: 3em;
+      border-top: 2px solid #8ecae6; 
+      transition: 250ms;
+    }
+  }
+
+  @media (max-width: 1000px){
+    .about-btn{
+        display: none !important;
+    }
+    .link-span{
+        display: none;
+    }
+    .project-links {
+        display: flex;
+        flex-direction: row; 
+        margin-top: 10px;
+        justify-content: flex-end;
+        padding-inline-start: 0; 
+        margin-bottom: auto;
+      }
+       h4{
+        margin-top: 10px;
+      }
+  }
+
+  @media(max-width: 425px){
+     h4{
+      display: none;
+    }
+  }

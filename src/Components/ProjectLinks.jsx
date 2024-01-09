@@ -1,39 +1,54 @@
-import {useState }from "react";
-import ScrollTo from "./ScrollTo";
-
-
-
+import React, { useState } from "react";
+import projects from "../assets/projects";
+import styles from "../assets/ProjectLinks.module.css";
+import ButtonLink from "./ButtonLink";
 
 export function ProjectLinks({}) {
- 
+  const [activeButton, setActiveButton] = useState('');
 
-  return <div className="project-links">            
-            <ul>
-              <li id="about-btn">
-                <ScrollTo targetId="about" className="link-btn" >
-                  <span className="link-span"></span><span>about me</span>
-                </ScrollTo>
-              </li>
-              <li className="project-h">
-                <h4>projects</h4>
-              </li>
-              <li>
-                <ScrollTo targetId="nc-news" className="link-btn" >
-                  <span className="link-span"></span>NC News
-                </ScrollTo>
-              </li>
-              <li>
-                
-                <ScrollTo targetId="nc-news-api" className='link-btn' >
-                  <span className="link-span"></span>NC News API
-                </ScrollTo>
-              </li>
-              <li>
-                <ScrollTo targetId="dark" className="link-btn" >
-                  <span className="link-span"></span>Dark Decent
-                </ScrollTo>
-              </li>
-            </ul>
-          </div>;
+  const handleClick = (id) => {
+    setActiveButton(id);
+    console.log(activeButton);
+  };
+  const scrollToTarget = (targetId) => {
+    const targetElement = document.getElementById(targetId);
+    targetElement.scrollIntoView({ behavior: "smooth" });
+  };
+
+  return (
+    <div className="">
+      <ul className={styles["project-links"]}>
+        <li className={`${styles["list-item"]} ${styles["about-btn"]}`}>
+          <button
+            className={styles["list-button"]}
+            onClick={() => {
+              scrollToTarget("about");
+              handleClick("about");
+            }}
+          >
+            <span className={styles["link-span"]}></span>
+            <span>about me</span>
+          </button>
+        </li>
+        
+          <h4>projects</h4>
+       
+        {projects.map((project) => {
+          return (
+            <li className={styles["list-item"]} key={project.id}>
+              <ButtonLink
+                id={project.id}
+                name={project.name}
+                className="link-btn"
+                onClick={() => {
+                  scrollToTarget(project.id);
+                  handleClick(project.id);
+                }}
+              ></ButtonLink>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  );
 }
-  

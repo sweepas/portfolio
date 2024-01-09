@@ -1,6 +1,7 @@
 import { Contacts } from './Components/Contacts';
 import { ProjectLinks } from "./Components/ProjectLinks";
 import { ProjectCard } from "./Components/ProjectCard";
+import tagLogo from './assets/tag.png'
 import "./App.css";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
             <h1>Marius</h1>
             <h1>Slepetys</h1>
             <h3>software developer</h3>
+            <img src={tagLogo} alt="logo" className='tg-logo'/>
           </div>
           <ProjectLinks />
           <Contacts     />

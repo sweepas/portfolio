@@ -1,6 +1,7 @@
-import ncNewsApi from "../api-img.png";
-import ncNewsFe from "../nc-news-img.png";
-import darkDecent from "../dark-decent.png";
+import ncNewsApi from "./api-img.png";
+import ncNewsFe from "./nc-news-img.png";
+import darkDecent from "./dark-decent.png";
+import tagLogo from "./tag.png"
 
 const projects = [
     {
@@ -14,11 +15,11 @@ const projects = [
     },
     {
       id: "nc-news-api",
-      name: "NC news API",
+      name: "News API",
       imgSrc: ncNewsApi,
       description:
         "This project involves building a robust RESTful API to provide application data programmatically, resembling real-world backend services like Reddit. The database is PostgreSQL, and interactions with it are facilitated using node-postgres.",
-      stack: ["JavaScript", "node.js", "express", "PSQL", "render", 'ElephantSQL'],
+      stack: ["JavaScript", "node.js", "express", 'ElephantSQL'],
       link: "https://nc-news-be-project-lndv.onrender.com/api/",
     },
     {
