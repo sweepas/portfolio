@@ -6,7 +6,8 @@ button{
     display: inline-flex;
     width: 60%;
     color: #8ecae6;
-    outline: none !important;
+    outline: none ;
+    filter: brightness(70%);
   }
   .link-span{ 
     display: block;
@@ -18,15 +19,21 @@ button{
   }
 
   .classActive{
-    background-color: greenyellow;
+    filter: drop-shadow(0 0 2em #219EBC);
     font-weight: bolder;
+    filter: brightness(100%);
+    .link-span{
+      width: 4em;
+      border-top: 2px solid #8ecae6; 
+      transition: 250ms;
+    }
   }
 
 button:hover{
     filter: drop-shadow(0 0 2em #219EBC);
     font-weight: bolder;
     .link-span{
-      width: 3em;
+      width: 4em;
       border-top: 2px solid #8ecae6; 
       transition: 250ms;
     }

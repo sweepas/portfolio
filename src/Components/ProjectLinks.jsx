@@ -19,8 +19,10 @@ export function ProjectLinks({}) {
     <div className="">
       <ul className={styles["project-links"]}>
         <li className={`${styles["list-item"]} ${styles["about-btn"]}`}>
-          <button
-            className={styles["list-button"]}
+          <ButtonLink
+          id={'about'}
+            activeButton={activeButton} 
+            name={'about me'}
             onClick={() => {
               scrollToTarget("about");
               handleClick("about");
@@ -28,7 +30,7 @@ export function ProjectLinks({}) {
           >
             <span className={`${styles["link-span"]}`}></span>
             <span>about me</span>
-          </button>
+          </ButtonLink>
         </li>
         
           <h4 className={styles["list-item"]}>projects</h4>
@@ -39,6 +41,7 @@ export function ProjectLinks({}) {
               <ButtonLink
                 id={project.id}
                 name={project.name}
+                activeButton={activeButton} 
                 className="link-btn"
                 onClick={() => {
                   scrollToTarget(project.id);

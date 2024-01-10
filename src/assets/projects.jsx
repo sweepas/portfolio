@@ -1,7 +1,7 @@
 import ncNewsApi from "./api-img.png";
 import ncNewsFe from "./nc-news-img.png";
 import darkDecent from "./dark-decent.png";
-import tagLogo from "./tag.png"
+
 
 const projects = [
     {
@@ -32,5 +32,24 @@ const projects = [
       link: "https://northcoders.com/project-phase/dark-descent",
     },
   ];
+
+  const buttons = [
+    {
+      id: "abaut",
+      name: "about me",
+    },
+    {
+      id: "nc-news",
+      name: "NC news",
+    },
+    {
+      id: "nc-news-api",
+      name: "News API",
+    },
+    {
+      id: "dark",
+      name: "Dark Decent",
+    },
+  ]
 
   export default projects
