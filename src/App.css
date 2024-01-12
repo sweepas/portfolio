@@ -36,6 +36,7 @@ body{
 }
 .page-body{
   display: flex;
+  
 }
 .name-container{
   max-width: 320px;
@@ -53,6 +54,9 @@ body{
   padding-bottom: 10px;
 }
 .project-side{
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
   padding-top: 3em;
   flex: 1;
   background-color: #132845;
@@ -112,7 +116,9 @@ body{
 .side-bar h1{
   margin:0%;
 }
-
+#dark{
+  margin-bottom: 100px;
+}
 
 .logo:hover{
   height: 40px;
@@ -142,6 +148,7 @@ body{
     flex: 1;
     order: 1; 
     overflow-y: visible;
+    gap: auto;
   }
   .project-card{
     height: 100%;
