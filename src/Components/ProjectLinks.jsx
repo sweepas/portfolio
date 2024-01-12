@@ -8,7 +8,6 @@ export function ProjectLinks({}) {
 
   const handleClick = (id) => {
     setActiveButton(id);
-    console.log(activeButton);
   };
   const scrollToTarget = (targetId) => {
     const targetElement = document.getElementById(targetId);

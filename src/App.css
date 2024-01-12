@@ -9,7 +9,7 @@ body{
   margin: 0;
   padding: 0;
   background-color: #132845;
-  color: #8ecae6;;
+  color: #8ecae6;
 }
 
 #root {
@@ -20,6 +20,9 @@ body{
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+.project-side::-webkit-scrollbar {
+  display: none;
 }
 
 .logo{
