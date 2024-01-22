@@ -14,10 +14,8 @@ body{
   background-position: bottom;
   background-attachment: fixed;
   height: 100vh;
-  color: #8ecae6;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   color: rgba(142, 202, 230, 0.8); 
-  overflow: hidden;
 }
 
 #root {
@@ -55,7 +53,6 @@ body{
 .side-bar {
   flex: 0 0 40%;
   /* background-color: #132845; */
-  overflow-y: hidden;
   vertical-align: middle;
   text-align: start;
   padding-left: 5%;
