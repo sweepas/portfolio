@@ -12,23 +12,15 @@
 }
 
 
-
+/* 
 body {
   margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-}
-body::before {
-  background-image: url('./assets/mountains.jpg');
-  background-size: cover;
-  background-position: bottom;
-  background-attachment: fixed;
-  height: 100vh;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  color: rgba(142, 202, 230, 0.8); 
-}
+} */
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
