@@ -28,7 +28,7 @@ export function ProjectLinks({}) {
             }}
           >
             <span className={`${styles["link-span"]}`}></span>
-            <span>about me</span>
+            <span className={`${styles["text-span"]}`}>about me</span>
           </ButtonLink>
         </li>
         

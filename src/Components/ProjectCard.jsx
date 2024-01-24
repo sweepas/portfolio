@@ -6,7 +6,9 @@ export function ProjectCard() {
     <>
       {projects.map((project, i) => {
         return (
+          <div className="card-container" id={i}>
           <div className="project-card" id={project.id} key={project.id}>
+            <div>
             <h4 className="project-name">
               {project.name} <span className="arrow">&#10138;</span>
             </h4>
@@ -19,6 +21,8 @@ export function ProjectCard() {
                 return <span key={tech}>{tech}</span>;
               })}
             </div>
+            </div>
+          </div>
           </div>
         );
       })}

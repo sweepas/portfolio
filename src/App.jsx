@@ -20,6 +20,7 @@ function App() {
           </div>
         </div>
         <div className="project-side">
+          <div className="about-card"> 
           <div className="about" id="about">
             Hello there! I'm Marius, a passionate software engineer with a love
             for tech. I recently completed a rigorous software development boot
@@ -35,6 +36,7 @@ function App() {
             developer. I'm excited to apply my skills and collaborate with
             dynamic teams on innovative projects, contributing effectively and
             aiding business growth.
+          </div>
           </div>
           <ProjectCard />
         </div>

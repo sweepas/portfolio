@@ -1,7 +1,12 @@
+ul{
+  display: flex;
+  flex-direction: column;
+}
+
 
 .list-item{
     list-style: none;
-    
+    display: inline-block;
   }
   .project-links{
     margin-bottom: 10em;
@@ -15,7 +20,9 @@
     transition: 250ms;
   
   }
-
+.text-span{
+  display: inline-block;
+}
 
   .list-button:hover{
     filter: drop-shadow(0 0 2em #219EBC);
