@@ -6,9 +6,9 @@ export function ProjectCard() {
     <>
       {projects.map((project, i) => {
         return (
-          <div className="card-container" id={i}>
+          <div className="card-container" key={i}>
           <div className="project-card" id={project.id} key={project.id}>
-            <div>
+            <div id={i+50}>
             <h4 className="project-name">
               {project.name} <span className="arrow">&#10138;</span>
             </h4>

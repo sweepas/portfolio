@@ -14,7 +14,7 @@ ul{
   .link-span{ 
     display: block;
     width: 1em;
-    border-top: 1px solid #8ecae6; 
+    border-top: 1px solid #fff; 
     margin: 0.5em 0; 
     margin-right: 0.5em;
     transition: 250ms;
@@ -30,7 +30,7 @@ ul{
     filter: brightness(100%);
     .link-span{
       width: 3em;
-      border-top: 2px solid #8ecae6; 
+      border-top: 2px solid #fff; 
       transition: 250ms;
     }
   }

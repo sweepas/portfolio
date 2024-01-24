@@ -5,14 +5,14 @@ button{
     background-color: inherit;
     display: inline-flex;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    color: rgba(142, 202, 230, 0.8); 
+    color: #fff; 
     outline: none ;
     
   }
   .link-span{ 
     display: block;
     width: 1em;
-    border-top: 1px solid #8ecae6; 
+    border-top: 1px solid #fff; 
     margin: 0.5em 0; 
     margin-right: 0.5em;
     transition: 250ms;
@@ -21,12 +21,12 @@ button{
   .classActive{
     filter: drop-shadow(0 0 2em #219EBC);
     font-weight: bolder;
-    color: #8ecae6;
+    color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     filter: brightness(100%);
     .link-span{
       width: 4em;
-      border-top: 2px solid #8ecae6; 
+      border-top: 2px solid #fff; 
       transition: 250ms;
     }
   }
@@ -38,7 +38,7 @@ button:hover{
 
     .link-span{
       width: 4em;
-      border-top: 2px solid #8ecae6; 
+      border-top: 2px solid #fff; 
       transition: 250ms;
     }
   }

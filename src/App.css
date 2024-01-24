@@ -13,22 +13,27 @@ body{
   padding: 0;
   height: 100vh;
   background-image: url('./assets/mountains.jpg');
-  background-size: cover;
-  background-position: bottom;
+  background-position: center;
   background-attachment: fixed;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  color: rgba(142, 202, 230, 0.8); 
+  background-size: cover;
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
   color: #fff;
 }
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+.project-text{
+  padding: 1em;
+}
 
 #root {
   display: flex;
   align-items: center;
   justify-content: center;
+    text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .project-side::-webkit-scrollbar {
   display: none;
@@ -110,7 +115,6 @@ h1 {
 .stack-container {
   display: flex;
   margin-top: 10px; 
-  color: #8ecae6;
   
 }
 
@@ -185,10 +189,7 @@ h1 {
 @media (max-width: 1000px) {
   body{
     min-height: 100%;
-    background-image: url('./assets/mountains.jpg');
-  background-size: cover;
-  background-position: bottom;
-  background-attachment: fixed;
+   
   }
   .page-body {
     flex-direction: column;
