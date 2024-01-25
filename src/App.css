@@ -22,20 +22,7 @@ body{
   /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
   color: #fff;
 }
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: url('./assets/mountains.jpg');
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: -1;
- }
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
