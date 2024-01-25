@@ -32,6 +32,7 @@ h1 {
 }
 
 #root {
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,6 +44,7 @@ h1 {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+overflow: auto;
 }
 .project-side::-webkit-scrollbar {
   display: none;
@@ -190,7 +192,7 @@ h1 {
   filter: drop-shadow(0 0 3em #0f0f10);
 }
 .project-img:hover{
-  transform: translateX(20px) translateY(-20px);
+  transform: translateX(20px) translateY(-20px) translateZ(10px);
   box-shadow: rgba(255, 255, 255, 0.2) -25px 25px;
 }
 
