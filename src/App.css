@@ -11,15 +11,28 @@ body{
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  height: 100vh;
+  /* background-image: url('./assets/mountains.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat; */
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+  color: #fff;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background-image: url('./assets/mountains.jpg');
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
-  color: #fff;
-}
+  z-index: -1;
+ }
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -55,7 +68,11 @@ h1 {
   height: 100vh;
   justify-items: center;
   padding-left: 10%;
-  
+  /* background-image: url('./assets/mountains.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat; */
 }
 
 .project-side{
@@ -68,6 +85,7 @@ h1 {
   flex: 1;
   overflow-y: auto;
   padding-right: 5%;
+  background: none;
 }
 .name-container{
   max-width: 320px;
@@ -174,18 +192,13 @@ h1 {
   height: 4em;
   padding: 0;
   transition: 0.5s;
-  filter: drop-shadow(0 0 3em #3c899c);
+  filter: drop-shadow(0 0 3em #0f0f10);
 }
 .project-img:hover{
   transform: translateX(20px) translateY(-20px);
   box-shadow: rgba(255, 255, 255, 0.2) -25px 25px;
 }
-.project-img:hover .project-name {
-  transform: scale(1.1);
-}
-.project-name:hover{
-  transform: rotate(45deg);
-}
+
 .project-card:hover{
   background: rgba(0, 0, 0, 0.5);  }
 
@@ -193,7 +206,7 @@ h1 {
 @media (max-width: 1000px) {
   body{
     min-height: 100%;
-   
+    overflow: auto; 
   }
   .page-body {
     flex-direction: column;

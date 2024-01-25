@@ -5,8 +5,9 @@ import tagLogo from "./assets/tag2.png";
 import "./App.css";
 
 function App() {
+  
   return (
-    <div className="page-body">
+    <div className="page-body" >
         <div className="side-bar">
           <div className="header-card">
             <div className="name-container">
