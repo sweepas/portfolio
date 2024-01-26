@@ -1,6 +1,6 @@
-import ncNewsApi from "./api-img.png";
-import ncNewsFe from "./nc-news-img.png";
-import darkDecent from "./dark-decent.png";
+import ncNewsApi from "./api-img.webp";
+import ncNewsFe from "./nc-news-img.webp";
+import darkDecent from "./dark-decent.webp";
 
 
 const projects = [

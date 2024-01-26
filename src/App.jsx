@@ -13,8 +13,8 @@ function App() {
             <div className="name-container">
               <h1>Marius</h1>
               <h1>Slepetys</h1>
-              <h3>software developer</h3>
-              <img src={tagLogo} alt="logo" className="tg-logo" />
+              <h2>software developer</h2>
+              <img src={tagLogo} alt="tag logo" className="tg-logo" />
             </div>
             <ProjectLinks />
             <Contacts />

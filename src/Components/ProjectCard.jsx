@@ -12,8 +12,8 @@ export function ProjectCard() {
             <h4 className="project-name">
               {project.name} <span className="arrow">&#10138;</span>
             </h4>
-            <a href={project.link} target="blank">
-              <img src={project.imgSrc} alt="" className="project-img" />
+            <a href={project.link} target="blank" alt="visit project website">
+              <img src={project.imgSrc} alt="project screenshot" className="project-img" />
             </a>
             <p className="project-text">{project.description}</p>
             <div className="stack-container" key={project.name}>
