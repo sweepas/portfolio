@@ -38,6 +38,7 @@ const projects = [
     description:
       "Simple Weather app built with NextJS using TypeScript and Tailwind for stylyng. Data use is from OpenWeather API",
     stack: ["next.js", "React", "TypeScript", "axios", "Tailwind"],
+    link: "https://silver-cajeta-92ef7b.netlify.app/",
   },
 ];
 
